@@ -1,0 +1,158 @@
+@import '../../variables';
+@import 'nav';
+@import 'chest-stats';
+
+.cabinet {
+	margin-top: 23px;
+	margin-bottom: 30px;
+
+	p {
+		font-weight: 900;
+		font-size: 13px;
+		color: #67390d;
+		margin: 0.8em 0;
+	}
+
+	&__content {
+		box-sizing: border-box;
+	    max-width: 944px;
+	    min-height: 456px;
+	    background-image: url("../img/content-bg-center.png");
+	    background-position: center;
+	    background-repeat: repeat-y;
+	    margin-left: -10px;
+	    margin-right: -10px;
+	    padding: 1px 10px 20px;
+	    position: relative;
+	    z-index: 10;
+
+	    &::before {
+	        content: "";
+	        position: absolute;
+	        display: block;
+	        background-image: url("../img/content-bg-top.png"), url("../img/content-bg-bottom.png");
+	        background-repeat: no-repeat, no-repeat;
+	        background-position: center top, center bottom;
+	        background-blend-mode: multiply;
+	        top: -6px;
+	        left: 0;
+	        right: 0;
+	        bottom: -5px;
+	        z-index: -1;
+	    }
+	}
+
+
+	&__aside {
+		box-sizing: border-box;
+		position: relative;
+		margin-top: 7px;
+		margin-bottom: 20px;
+		border: 1px solid rgba(103, 57, 13, .4);
+	}
+
+	&__main {
+		box-sizing: border-box;
+	}
+
+	@media only screen and (min-width: 960px) {
+
+		margin-bottom: 100px;
+
+		p {
+			font-size: 14px;
+		}
+
+		&__content {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-items: flex-start;
+			justify-content: flex-end;
+	        margin: 0 auto;
+	        padding: 1px 10px 80px;
+
+	        &::after {
+	        	content: "";
+	        	position: absolute;
+	        	display: block;
+	        	width: 511px;
+	        	height: 160px;
+	        	background-image: url("../img/spyglass.png");
+	        	background-repeat: no-repeat !important;
+        	    left: -121px;
+    			bottom: -83px;
+	        }
+		}
+
+		&__aside {
+			order: 1;
+			max-width: auto;
+			flex-basis: 155px;
+			flex-shrink: 1;
+			flex-grow: 0;
+			margin-top: 45px;
+
+			border-width: 1px;
+			border-style: solid;
+			border-bottom-color: rgba(103, 57, 13, .4);
+			border-right-color: rgba(103, 57, 13, .4);
+			border-left-width: 0;
+			border-top-width: 0;
+			border-left-color: transparent;
+			border-top-color: transparent;
+
+			&::before,
+			&::after {
+				content: "";
+				display: block;
+				position: absolute;
+				background: rgba(103, 57, 13, .4);
+			}
+
+			&::after {
+				width: 1px;
+				bottom: 0;
+				top: 44px;
+				left: 0;
+			}
+
+			&::before {
+				height: 1px;
+				left: 44px;
+				right: 0;
+				top: 0;
+			}
+		}
+
+		&__main {
+			margin-right: 44px;
+
+			.page-title {
+				margin-top: 26px;
+			}
+		}
+
+		&__invite-wrapper {
+		    width: 528px;
+    		margin: 0 auto;
+		}
+
+		&__invite-tabs {
+			.tabs__tab-title {
+				width: 50%;
+			}
+			.tabs__tab {
+				height: 110px;
+			}
+		}
+
+		&__invite-tab-right {
+			right: 0;
+		}
+
+		&__invite-tab-left {
+			left: 0;
+		}
+	}
+}

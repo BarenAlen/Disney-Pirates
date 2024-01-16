@@ -1,0 +1,195 @@
+.page-about {
+  min-height: 1135px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 35px 15px 50px;
+
+  text-align: center;
+
+  background-repeat: no-repeat;
+  background-position: calc(50% - 35px) top;
+  background-image: url('../img/prizes-bg.png');
+
+  &_container {
+    max-width: 690px;
+    margin: 0 auto;
+  }
+
+  &_title {
+    margin-bottom: 15px;
+    padding-bottom: 26px;
+
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $accent-color;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 315px;
+    background-image: url('../img/game/g-quest-bg.png');
+  }
+
+  &_stages {
+    overflow: auto;
+    margin-top: 15px;
+  }
+
+  &_item {
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 33.3%;
+
+    &.__last {
+      width: 50%;
+      margin-bottom: 0;
+    }
+  }
+
+  figcaption {
+    font-size: 24px;
+    font-weight: 400;
+
+    text-transform: uppercase;
+
+    color: #003e7e;
+  }
+
+  .figpicture {
+    margin-top: 7px;
+    position: relative;
+    min-height: 90px;
+  }
+
+  p {
+    font-weight: 700;
+  }
+
+  &_txt {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 13px;
+
+    color: #7f5a3a;
+  }
+
+  &_head {
+    margin-bottom: 22px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    text-transform: uppercase;
+
+    color: $accent-color;
+
+    & + & {
+      margin-top: 20px;
+    }
+  }
+
+  .button {
+    max-width: 320px;
+    box-shadow: 0 0.4rem 0.7rem rgba(111, 84, 53, 0.6);
+  }
+
+  @media only screen and (max-width: 670px) {
+    background-size: cover;
+
+    .__hidden-xs {
+      display: none;
+    }
+
+    &_item {
+      margin-bottom: 15px;
+      width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 460px) {
+
+    &_title {
+      font-size: 23px;
+    }
+
+    &_item {
+      width: 90%;
+
+      &.__last {
+        width: 90%;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    &_title {
+      padding-bottom: 40px;
+
+      font-size: 36px;
+      line-height: 1.1;
+
+      background-size: auto;
+    }
+
+    figure:not(:first-child) {
+
+        .figpicture:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          right: 85%;
+          transform: translateY(-50%);
+          background-repeat: no-repeat;
+          background-position: 100% 50%;
+          background-size: contain;
+        }
+
+        .figpicture.__arrow1:before {
+          width: 52px;
+          height: 16px;
+          background-image: url('../img/step-two.png');
+        }
+
+        .figpicture.__arrow2:before {
+          width: 49px;
+          height: 14px;
+          background-image: url('../img/step-three.png');
+        }
+
+        .figpicture.__arrow3:before {
+          width: 42px;
+          height: 42px;
+          background-image: url('../img/step-four.png');
+        }
+
+        .figpicture.__arrow4:before {
+          width: 73px;
+          height: 33px;
+          background-image: url('../img/step-five.png');
+        }
+
+        .figpicture.__arrow5:before {
+          width: 58px;
+          height: 16px;
+          background-image: url('../img/step-six.png');
+        }
+
+        .figpicture.__arrow6:before {
+          width: 76px;
+          height: 74px;
+          top: 25%;
+          right: 65%;
+          background-image: url('../img/step-seven.png');
+        }
+      }
+    }
+}

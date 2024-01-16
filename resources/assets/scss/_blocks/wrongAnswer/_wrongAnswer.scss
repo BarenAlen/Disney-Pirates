@@ -1,0 +1,49 @@
+.wrongAnswer {
+	width: 718px;
+	min-height: 500px;
+	z-index: 10;
+	text-align: center;
+	padding: 30px;
+	position: relative;
+	background-image: url('../img/fancy-body_wrongAnswer.png');
+	background-repeat: repeat;
+	background-position: center;
+
+	// Только для фона и оверфлоу фона СВЕРХУ попапа
+	&::before {
+		top: -9px;
+		background-image: url('../img/fancy-top_wrongAnswer.png');
+	}
+	// Только для фона и оверфлоу фона СНИЗУ попапа
+	&::after {
+		bottom: -4px;
+		background-image: url('../img/fancy-bottom_wrongAnswer.png');
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+
+	img.ship {
+		width: 121px;
+		height: 99px;
+		margin-bottom: 20px;
+	}
+
+	@media only screen and (max-width: 768px) {
+		width: 360px;
+
+		h1 {
+			font-size: 26px;
+		}
+	}
+
+	@media only screen and (max-width: 400px) {
+		.button {
+		    white-space: normal;
+		}
+
+		width: 310px;
+		padding: 30px 10px;
+	}
+}

@@ -1,0 +1,67 @@
+@import "variables";
+
+.page {
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+
+
+    &-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    &-main-content {
+        @media only screen and (min-width: 0px) {
+            flex-basis: 100%;
+            flex-grow: 1;
+            flex-shrink: 1;
+            margin: 16px 0 0;
+        }
+
+        @media only screen and (min-width: $desktop-breakpoint) {
+            flex-basis: calc(100% - (300px + 16px));
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+    }
+
+    &-aside-content {
+        @media only screen and (min-width: 0px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 100%;
+            flex-grow: 1;
+            flex-shrink: 1;
+
+            &:empty {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width: $desktop-breakpoint) {
+            flex-basis: 300px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            margin: 16px 0 0 16px;
+        }
+    }
+}
+
+.container {
+    @media only screen and (min-width: 0px) {
+        max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    @media only screen and (min-width: $desktop-breakpoint) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

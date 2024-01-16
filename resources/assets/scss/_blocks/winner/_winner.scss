@@ -1,0 +1,160 @@
+.winner {
+	width: 945px;
+	min-height: 650px;
+	z-index: 10;
+	text-align: center;
+	padding: 30px;
+	position: relative;
+	background-image: url('../img/fancy-body_winner.png');
+	background-repeat: repeat;
+	background-position: 100% 50%;
+
+	// Только для фона и оверфлоу фона СВЕРХУ попапа
+	&::before {
+		top: -9px;
+		background-image: url('../img/fancy-top_winner.png');
+	}
+	// Только для фона и оверфлоу фона СНИЗУ попапа
+	&::after {
+		bottom: -4px;
+		background-image: url('../img/fancy-bottom_winner.png');
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		line-height: 24px;
+	}
+
+	p {
+		color: #7f5a3a;
+		margin: 3px 0 13px;
+		min-height: 51px;
+	}
+
+	.address {
+		color: #003e7e;
+	}
+
+	form {
+		margin-top: 25px;
+	}
+
+	.form_caption {
+		color: #e51937;
+		margin-bottom: 10px;
+		font-size: 24px;
+		font-weight: 700;
+		text-align: left;
+		text-transform: lowercase;
+	}
+
+	label {
+		opacity: 0.8;
+	}
+
+	.back-step {
+		font-weight: 800;
+		margin-top: 15px;
+		display: inline-block;
+	}
+
+	img {
+		vertical-align: middle;
+	}
+
+	.button {
+		max-width: 219px;
+		box-shadow: 0 4px 7px rgba(111, 84, 53, 0.6);
+
+		&.__choose {
+			padding: 13px;
+			max-width: 213px;
+		}
+
+		&.__tick {
+			background-size: auto;
+			background-repeat: no-repeat;
+			background-position: 18px 50%;
+			background-image: url('../img/icons/tick.png');
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		width: 360px;
+
+		h1 {
+			font-size: 26px;
+		}
+	}
+
+	@media only screen and (max-width: 400px) {
+		.button {
+		    white-space: normal;
+		}
+
+		width: 310px;
+		padding: 30px 10px;
+	}
+}
+
+.winner-reward {
+	display: block;
+	max-width: 600px;
+	padding: 20px 30px 20px;
+	margin: 0 auto 20px;
+	border: .1rem solid #ca925d;
+
+	&_col {
+		float: left;
+
+		&.__one {
+			width: 359px;
+			text-align: left;
+			padding: 0 30px;
+		}
+
+		&.__two {
+			width: 239px;
+			text-align: center;
+			padding: 0 14px;
+		}
+	}
+
+	&.__small {
+		width: 290px;
+		min-height: 290px;
+		padding: 35px 30px 30px;
+		display: inline-block;
+		vertical-align: top;
+
+		& + & {
+			margin-left: 20px;
+		}
+	}
+
+	&.__tickets {
+		overflow: auto;
+		padding: 30px 0;
+		p {
+			min-height: auto;
+		}
+
+		.note {
+			color: #e51937;
+			font-weight: 700;
+		}
+	}
+
+	&.__form {
+		min-height: auto;
+		padding: 10px 13px 0;
+	}
+
+	&_pic {
+		min-height: 120px;
+		line-height: 120px;
+	}
+}

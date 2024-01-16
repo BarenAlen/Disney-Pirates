@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <title>Дисней | Игра</title>
+
+        <link rel="manifest" href="/manifest.json" />
+
+        <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+        <link
+            rel="shortcut icon"
+            href="assets/img/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="assets/css/common.css" />
+    </head>
+    <body>
+        <div class="page page-inner">
+            <header class="page-header page-header-inner">
+                <div class="page-header__content">
+                    <div class="page-header__logo">
+                        <a href="index.html">
+                            <img
+                                src="assets/img/logo.png"
+                                alt="Главная страница"
+                            />
+                        </a>
+                    </div>
+
+                    <div class="page-header__sound">
+                        <button
+                            id="sound-toggler"
+                            class="sound-toggler"
+                        ></button>
+                    </div>
+
+                    <div class="page-header__menu">
+                        <div
+                            class="page-header__menu-item page-header__menu-item__login"
+                        >
+                            <a class="fancybox-login" href="#login">Войти</a>
+                        </div>
+                        <div class="page-header__menu-item">
+                            <a
+                                href="#nav"
+                                id="nav-toggle"
+                                class="nav-toggle"
+                                title="Главное меню"
+                            >
+                                <span class="nav-toggle__txt">Меню</span>
+                                <div class="menu-icon">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container">
+                <div class="quiz">
+                    <div class="quiz__container">
+                        <div class="quiz__stages">
+                            <div class="quiz__stages__date">10 мая</div>
+                            <ul class="quiz-stages-list">
+                                <li class="missing">
+                                    <a href="#" data-date="16.05"></a>
+                                </li>
+                                <li class="missing">
+                                    <a href="#" data-date="16.05"></a>
+                                </li>
+                                <li class="missing">
+                                    <a href="#" data-date="16.05"></a>
+                                </li>
+                                <li class="missing">
+                                    <a href="#" data-date="16.05"></a>
+                                </li>
+                                <li class="current">
+                                    <a href="#" data-date="16.05"></a>
+                                </li>
+                                <li><a href="#" data-date="16.05"></a></li>
+                                <li class="active">
+                                    <a href="#" data-date="16.05"></a>
+                                </li>
+                                <li><a href="#" data-date="16.05"></a></li>
+                                <li><a href="#" data-date="16.05"></a></li>
+                                <li><a href="#" data-date="16.05"></a></li>
+                                <li><a href="#" data-date="16.05"></a></li>
+                                <li><a href="#" data-date="16.05"></a></li>
+                                <li><a href="#" data-date="16.05"></a></li>
+                                <li><a href="#" data-date="16.05"></a></li>
+                                <li><a href="#" data-date="16.05"></a></li>
+                                <li><a href="#" data-date="16.05"></a></li>
+                                <li><a href="#" data-date="16.05"></a></li>
+                                <li><a href="#" data-date="16.05"></a></li>
+                                <li><a href="#" data-date="16.05"></a></li>
+                                <li><a href="#" data-date="16.05"></a></li>
+                                <li><a href="#" data-date="16.05"></a></li>
+                                <li>
+                                    <a
+                                        class="fancybox-invite"
+                                        href="#invite"
+                                        data-date="16.05"
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="fancybox-winner"
+                                        href="#winner"
+                                        data-date="16.05"
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="fancybox-congratulations"
+                                        href="#congratulations"
+                                        data-date="16.05"
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="fancybox-wrongAnswer"
+                                        href="#wrongAnswer"
+                                        data-date="16.05"
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="fancybox-correctAnswer"
+                                        href="#correctAnswer"
+                                        data-date="16.05"
+                                    ></a>
+                                </li>
+                            </ul>
+                            <div class="quiz__stages__date">4 июня</div>
+                        </div>
+                        <div class="quiz__stats">
+                            <div class="quiz__stats__time">
+                                у вас есть
+                                <div class="quiz__stats__unit">00:54 сек,</div>
+                                чтобы ответить на&nbsp;вопрос
+                            </div>
+                            <div class="quiz__stats__coins">
+                                <br class="show-lg" /><br class="show-lg" />и
+                                получить
+                                <div class="quiz__stats__unit">120 монет</div>
+                            </div>
+                        </div>
+                        <div class="quiz__body">
+                            <div class="quiz__body__intro">
+                                <a href="#" class="icon-prev quiz__control"></a>
+                                <span class="alert-text">Сегодня 16 мая</span>,
+                                и ваш вопрос дня
+                                <a href="#" class="icon-next quiz__control"></a>
+                            </div>
+                            <div class="quiz__question">
+                                На чем Джек впервые приплыл в&nbsp;Порт-Ройяль?
+                            </div>
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <input
+                                        type="radio"
+                                        id="answer-1"
+                                        class="form-control quiz-radio quiz-radio-1"
+                                        name="question-1"
+                                    />
+                                    <label for="answer-1"
+                                        >На Черной Жемчужине</label
+                                    >
+                                </div>
+                                <div class="form-group">
+                                    <input
+                                        type="radio"
+                                        id="answer-2"
+                                        class="form-control quiz-radio quiz-radio-2"
+                                        name="question-1"
+                                    />
+                                    <label for="answer-2"
+                                        >Ни на чем, сам приплыл</label
+                                    >
+                                </div>
+                                <div class="form-group">
+                                    <input
+                                        type="radio"
+                                        id="answer-3"
+                                        class="form-control quiz-radio quiz-radio-3"
+                                        name="question-1"
+                                    />
+                                    <label for="answer-3"
+                                        >На маленьком кораблике, больше похожем
+                                        на лодку</label
+                                    >
+                                </div>
+                                <div class="form-group">
+                                    <input
+                                        type="radio"
+                                        id="answer-4"
+                                        class="form-control quiz-radio quiz-radio-1"
+                                        name="question-1"
+                                    />
+                                    <label for="answer-4">На черепахе</label>
+                                </div>
+                                <div class="form-group">
+                                    <input
+                                        type="radio"
+                                        id="answer-5"
+                                        class="form-control quiz-radio quiz-radio-3"
+                                        name="question-1"
+                                    />
+                                    <label for="answer-5">На кракене</label>
+                                </div>
+                                <div class="form-group">
+                                    <input
+                                        type="radio"
+                                        id="answer-6"
+                                        class="form-control quiz-radio quiz-radio-2"
+                                        name="question-1"
+                                    />
+                                    <label for="answer-6"
+                                        >На английском корабле под
+                                        конвоем</label
+                                    >
+                                </div>
+                                <button
+                                    class="button quiz__submit"
+                                    type="submit"
+                                >
+                                    Ответить
+                                </button>
+                            </form>
+                            <p class="quiz__note">
+                                Узнать, правильно ли вы ответили на вопрос, вы
+                                сможете завтра
+                                в&nbsp;9:00&nbsp;по&nbsp;московскому времени,
+                                после публикации нового вопроса
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="page-footer">
+                <div class="container">
+                    <div
+                        class="page-footer__content page-footer__content--center"
+                    >
+                        <div class="page-footer__item">
+                            &copy; ПАО «Аэрофлот» 2017
+                        </div>
+                        <a class="page-footer__item" href="#">Правила акции</a>
+                    </div>
+                </div>
+            </footer>
+
+            <div id="nav" class="nav-overlay">
+                <button class="js-nav-close nav__close">&times;</button>
+                <div class="nav js-nav">
+                    <nav class="nav__container">
+                        <ul class="nav__menu">
+                            <li>
+                                <a href="about.html" class="nav__menu-item"
+                                    >Об акции</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#login"
+                                    class="fancybox-login nav__menu-item"
+                                    >Участвовать</a
+                                >
+                            </li>
+                            <li>
+                                <a href="prizes.html" class="nav__menu-item"
+                                    >Призы</a
+                                >
+                            </li>
+                            <li>
+                                <a href="rating.html" class="nav__menu-item"
+                                    >Рейтинг</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="registration.html"
+                                    class="nav__menu-item"
+                                    >Регистрация</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#feedback"
+                                    class="fancybox-feedback nav__menu-item"
+                                    >Обратная связь</a
+                                >
+                            </li>
+                        </ul>
+                        <div class="nav__sharing">
+                            <div class="nav__sharing-title">
+                                Рассказать друзьям
+                            </div>
+                            <ul class="social-list">
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="twitter goodshare"
+                                        data-type="tw"
+                                        data-title=""
+                                        target="_blank"
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="vk goodshare"
+                                        data-type="vk"
+                                        data-title=""
+                                        target="_blank"
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="facebook goodshare"
+                                        data-type="fb"
+                                        data-title=""
+                                        target="_blank"
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div id="winner" class="fancybox" style="display: none">
+                <div class="winner fancy-custom">
+                    <h1>
+                        Поздравляем!<br />
+                        Вы стали победителем I этапа!
+                    </h1>
+                    <div class="winner_content" data-step="0">
+                        <h2>Выберите вашу награду:</h2>
+                        <div class="winner-reward __small">
+                            <div class="winner-reward_pic">
+                                <img
+                                    src="./assets/img/tickets.png"
+                                    alt="Билеты"
+                                />
+                            </div>
+                            <p>
+                                2 билета на специальный показ фильма «Пираты
+                                Карибского моря. Мертвецы не рассказывают
+                                сказки»
+                            </p>
+                            <a href="#" class="button __choose">Выбрать</a>
+                        </div>
+                        <div class="winner-reward __small">
+                            <div class="winner-reward_pic">
+                                <img
+                                    src="./assets/img/miles-bonus.png"
+                                    alt="1000 миль"
+                                />
+                            </div>
+                            <p>
+                                1000 миль программы<br />
+                                «Аэрофлот Бонус»
+                            </p>
+                            <a href="#" class="button __choose">Выбрать</a>
+                        </div>
+                    </div>
+                    <div
+                        class="winner_content"
+                        data-step="1.1"
+                        style="display: none"
+                    >
+                        <h2>Вы выбрали приз</h2>
+                        <div class="winner-reward">
+                            <div class="winner-reward_pic">
+                                <img
+                                    src="./assets/img/miles-bonus.png"
+                                    alt="1000 миль"
+                                />
+                            </div>
+                            <h2>1000 миль программы «Аэрофлот Бонус»</h2>
+                            <p>
+                                Они будут зачислены вам в течение месяца на
+                                карту<br />
+                                участника программы, указанную при регистрации
+                            </p>
+                            <a href="#" class="button __tick">Подтвердить</a>
+                            <a href="#" class="back-step">Изменить выбор</a>
+                        </div>
+                    </div>
+                    <div
+                        class="winner_content"
+                        data-step="1.2"
+                        style="display: none"
+                    >
+                        <h2>Вы выбрали приз</h2>
+                        <div class="winner-reward">
+                            <div class="winner-reward_pic">
+                                <img
+                                    src="./assets/img/tickets.png"
+                                    alt="Билеты"
+                                />
+                            </div>
+                            <h2>2 билета на специальный показ</h2>
+                            <p>
+                                фильма «Пираты Карибского моря. Мертвецы не
+                                рассказывают сказки», который состоится в Москве
+                                в кинотеатре ХХХХ YY мая 2017 года в 19:00
+                            </p>
+                            <a href="#" class="button __tick">Подтвердить</a>
+                            <a href="#" class="back-step">Изменить выбор</a>
+                        </div>
+                    </div>
+                    <div
+                        class="winner_content"
+                        data-step="2.1"
+                        style="display: none"
+                    >
+                        <h2>Вы выбрали приз</h2>
+                        <div class="winner-reward">
+                            <div class="winner-reward_pic">
+                                <img
+                                    src="./assets/img/miles-bonus.png"
+                                    alt="1000 миль"
+                                />
+                            </div>
+                            <h2>1000 миль программы «Аэрофлот Бонус»</h2>
+                            <p>
+                                Они будут зачислены вам в течение месяца на
+                                карту<br />
+                                участника программы, указанную при регистрации
+                            </p>
+                            <h2>
+                                Ждите зачисления миль и продолжайте<br />
+                                бороться за главный приз!
+                            </h2>
+                            <a href="#" class="button">Вернуться в игру</a>
+                        </div>
+                    </div>
+                    <div
+                        class="winner_content"
+                        data-step="2.2"
+                        style="display: none"
+                    >
+                        <h2>
+                            Для того, чтобы получить билеты, заполните даные о
+                            себе
+                        </h2>
+                        <form
+                            id="form-guest"
+                            action="/login"
+                            method="post"
+                            role="form"
+                        >
+                            <div class="winner-reward __small __form">
+                                <h2 class="form_caption">Гость 1</h2>
+                                <div
+                                    class="form-group field-guest-username required"
+                                >
+                                    <div class="input-placeholder">
+                                        <input
+                                            type="text"
+                                            id="guest-username1"
+                                            class="form-control text"
+                                            name="LoginForm[username]"
+                                        />
+                                        <label for="guest-username1">Имя</label>
+                                    </div>
+                                    <p class="help-block help-block-error"></p>
+                                </div>
+                                <div
+                                    class="form-group field-guest-surname required"
+                                >
+                                    <div class="input-placeholder">
+                                        <input
+                                            type="text"
+                                            id="guest-surname1"
+                                            class="form-control text"
+                                            name="LoginForm[surname]"
+                                        />
+                                        <label for="guest-surname1"
+                                            >Фамилия</label
+                                        >
+                                    </div>
+                                    <p class="help-block help-block-error"></p>
+                                </div>
+                                <div
+                                    class="form-group field-guest-birthday required"
+                                >
+                                    <div class="input-placeholder">
+                                        <input
+                                            type="text"
+                                            id="guest-birthday1"
+                                            class="form-control text"
+                                            name="LoginForm[username]"
+                                        />
+                                        <label for="guest-birthday1"
+                                            >Дата рождения</label
+                                        >
+                                    </div>
+                                    <p class="help-block help-block-error"></p>
+                                </div>
+                            </div>
+                            <div class="winner-reward __small __form">
+                                <h2 class="form_caption">Гость 2</h2>
+                                <div
+                                    class="form-group field-guest-username required"
+                                >
+                                    <div class="input-placeholder">
+                                        <input
+                                            type="text"
+                                            id="guest-username2"
+                                            class="form-control text"
+                                            name="LoginForm[username]"
+                                        />
+                                        <label for="guest-username2">Имя</label>
+                                    </div>
+                                    <p class="help-block help-block-error"></p>
+                                </div>
+                                <div
+                                    class="form-group field-guest-surname required"
+                                >
+                                    <div class="input-placeholder">
+                                        <input
+                                            type="text"
+                                            id="guest-surname2"
+                                            class="form-control text"
+                                            name="LoginForm[surname]"
+                                        />
+                                        <label for="guest-surname2"
+                                            >Фамилия</label
+                                        >
+                                    </div>
+                                    <p class="help-block help-block-error"></p>
+                                </div>
+                                <div
+                                    class="form-group field-guest-birthday required"
+                                >
+                                    <div class="input-placeholder">
+                                        <input
+                                            type="text"
+                                            id="guest-birthday2"
+                                            class="form-control text"
+                                            name="LoginForm[username]"
+                                        />
+                                        <label for="guest-birthday2"
+                                            >Дата рождения</label
+                                        >
+                                    </div>
+                                    <p class="help-block help-block-error"></p>
+                                </div>
+                            </div>
+                            <div>
+                                <button
+                                    type="submit"
+                                    class="button form-control"
+                                    name="surname-button"
+                                >
+                                    Получить билеты
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div
+                        class="winner_content"
+                        data-step="2.3"
+                        style="display: none"
+                    >
+                        <h2>Ваши билеты успешно созданы!</h2>
+                        <div class="winner-reward __tickets">
+                            <div class="winner-reward_col __one">
+                                <h2>
+                                    Гость 1:<br /><span
+                                        >Александр Воробьев</span
+                                    >
+                                </h2>
+                                <h2>
+                                    Гость 2:<br /><span
+                                        >Екатерина Воробьева</span
+                                    >
+                                </h2>
+                                <h2>
+                                    26 мая 2017 года в 19:00<br />
+                                    Кинотеатр “Октябрь”
+                                </h2>
+                                <p class="address">
+                                    <b>Адрес:</b> Россия, Москва, улица Новый
+                                    Арбат, 24<br />
+                                    <b>Телефон:</b> +7 903 208‑84-59
+                                </p>
+                                <p class="note">
+                                    И не забудьте с собой паспорт!
+                                </p>
+                            </div>
+                            <div class="winner-reward_col __two">
+                                <p>
+                                    <b>Адрес:</b> Россия, Москва, улица Новый
+                                    Арбат, 24 <b>Телефон:</b> +7 903 208‑84-59
+                                </p>
+                                <a href="#" class="button">Сохранить pdf</a>
+                            </div>
+                        </div>
+                        <a href="#" class="button">Вернуться в игру</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="login" class="fancybox" style="display: none">
+                <div class="login fancy-custom">
+                    <h1>Войти на сайт</h1>
+                    <form
+                        id="form-signup"
+                        action="/login"
+                        method="post"
+                        role="form"
+                    >
+                        <div
+                            class="form-group field-loginform-username required"
+                        >
+                            <div class="input-placeholder">
+                                <input
+                                    type="text"
+                                    id="loginform-username"
+                                    class="form-control text"
+                                    name="LoginForm[username]"
+                                />
+                                <label for="loginform-username"
+                                    >Логин, он же ваш электронный адрес</label
+                                >
+                            </div>
+                            <p class="help-block help-block-error"></p>
+                        </div>
+                        <div
+                            class="form-group field-loginform-password required"
+                        >
+                            <div class="input-placeholder">
+                                <input
+                                    type="password"
+                                    id="loginform-password"
+                                    class="form-control text"
+                                    name="LoginForm[password]"
+                                    placeholder=""
+                                />
+                                <label for="loginform-password">Пароль</label>
+                            </div>
+                            <p class="help-block help-block-error"></p>
+                        </div>
+                        <button
+                            type="submit"
+                            class="button form-control"
+                            name="login-button"
+                        >
+                            Войти
+                        </button>
+                        <div class="login__text">
+                            и начать приключения!<br />или
+                        </div>
+                        <a href="#" class="button button-white form-control"
+                            >Зарегистрироваться в акции</a
+                        >
+                        <p>
+                            Не можете войти на сайт?
+                            <a href="/request-password-reset" class="forgot"
+                                >Сбросить пароль</a
+                            >
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- INVITE -->
+
+            <div id="invite" class="fancybox" style="display: none">
+                <div class="invite fancy-custom">
+                    <h1>
+                        Спасибо, что испытали<br />
+                        удачу и ответили на вопрос
+                    </h1>
+                    <div class="cabinet__invite-wrapper">
+                        <p class="text-center">
+                            Правильный ответ вы узнаете завтра, в 9:00 по
+                            московскому времени в Личном кабинете. Мы можем
+                            напомнить вам об этом, если вы поставите оповещение
+                            в<a class="cabinet__nav__item settings" href="#"
+                                >Настройках</a
+                            >.
+                        </p>
+                        <h2>
+                            Поделитесь с друзьями этим вопросом и получите
+                            дополнительные монеты прямо сейчас!
+                        </h2>
+                        <div class="plus-coins plus-coins-bg--lg">
+                            + 50 <i class="icon-coin"></i> монет за каждого
+                            друга
+                        </div>
+
+                        <p class="text-center">
+                            Для этого ваш друг должен зарегистрироваться в
+                            акции, перейдя по вашей ссылке из письма или
+                            социальной сети.
+                        </p>
+
+                        <div class="tabs cabinet__invite-tabs">
+                            <div class="tabs__item">
+                                <div
+                                    class="js-tab-control tabs__tab-title cabinet__invite-tab-left"
+                                >
+                                    Отправить ссылку другу
+                                </div>
+                                <div class="tabs__tab js-tab">
+                                    <div class="form-group required">
+                                        <div class="input-copy">
+                                            <div class="input-placeholder">
+                                                <input
+                                                    id="invite"
+                                                    class="form-control text"
+                                                    name="invite"
+                                                    type="text"
+                                                />
+                                                <label for="invite"
+                                                    >Ссылка для друзей</label
+                                                >
+                                            </div>
+                                            <button
+                                                title="скопировать в буфер"
+                                                class="button button-copy"
+                                            >
+                                                <i class="icon-copy"></i>
+                                            </button>
+                                        </div>
+                                        <p>
+                                            <i
+                                                >Скопируйте эту ссылку и
+                                                отправьте другу любым способом,
+                                                к примеру по email</i
+                                            >
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__item">
+                                <div
+                                    class="js-tab-control tabs__tab-title cabinet__invite-tab-right active"
+                                >
+                                    Поделиться в соц. сетях
+                                </div>
+                                <div class="tabs__tab js-tab">
+                                    <ul class="social-butons-list">
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="fb social-button"
+                                                data-type="fb"
+                                                data-title=""
+                                                target="_blank"
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="vk social-button"
+                                                data-type="vk"
+                                                data-title=""
+                                                target="_blank"
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="tw social-button"
+                                                data-type="tw"
+                                                data-title=""
+                                                target="_blank"
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="ok social-button"
+                                                data-type="ok"
+                                                data-title=""
+                                                target="_blank"
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="feedback" class="fancybox" style="display: none">
+                <div class="feedback fancy-custom">
+                    <h1>Обратная связь</h1>
+                    <form
+                        id="form-feedback"
+                        action="/login"
+                        method="post"
+                        role="form"
+                    >
+                        <div
+                            class="form-group field-feedback-username required"
+                        >
+                            <div class="input-placeholder">
+                                <input
+                                    type="text"
+                                    id="feedback-username"
+                                    class="form-control text"
+                                    name="LoginForm[username]"
+                                />
+                                <label for="feedback-username"
+                                    >Имя<span class="required-mark"
+                                        >*</span
+                                    ></label
+                                >
+                            </div>
+                            <p class="help-block help-block-error"></p>
+                        </div>
+                        <div
+                            class="form-group field-feedback-username required"
+                        >
+                            <div class="input-placeholder">
+                                <input
+                                    type="text"
+                                    id="feedback-username"
+                                    class="form-control text"
+                                    name="LoginForm[username]"
+                                />
+                                <label for="feedback-username"
+                                    >Номер карты Аэрофлот Бонус<span
+                                        class="required-mark"
+                                        >*</span
+                                    ></label
+                                >
+                            </div>
+                            <p class="help-block help-block-error"></p>
+                        </div>
+                        <div
+                            class="form-group field-feedback-username required"
+                        >
+                            <div class="input-placeholder">
+                                <input
+                                    type="text"
+                                    id="feedback-username"
+                                    class="form-control text"
+                                    name="LoginForm[username]"
+                                />
+                                <label for="feedback-username"
+                                    >Электронный адрес для связи<span
+                                        class="required-mark"
+                                        >*</span
+                                    ></label
+                                >
+                            </div>
+                            <p class="help-block help-block-error"></p>
+                        </div>
+                        <div class="form-group field-feedback-username">
+                            <div class="input-placeholder">
+                                <textarea
+                                    id="feedback-textarea"
+                                    class="form-control"
+                                    rows="3"
+                                ></textarea>
+                                <label for="feedback-textarea"
+                                    >Ваше сообщение<span class="required-mark"
+                                        >*</span
+                                    ></label
+                                >
+                            </div>
+                        </div>
+                        <div style="text-align: left">
+                            <span class="required-mark">*</span>
+                            <i>Поля, обязательные для заполнения</i>
+                        </div>
+                        <button
+                            type="submit"
+                            class="button form-control"
+                            name="feedback-button"
+                        >
+                            Отправить
+                        </button>
+                        <p>Мы ответим вам в течении суток</p>
+                    </form>
+                </div>
+            </div>
+
+            <div id="congratulations" class="fancybox" style="display: none">
+                <div class="congratulations fancy-custom">
+                    <h1>Поздравляем!</h1>
+                    <h2>
+                        Вам удалось<br />
+                        успешно причалить к нашему<br />
+                        пиратскому порталу сегодня
+                    </h2>
+                    <img
+                        class="ship"
+                        src="./assets/img/ship.png"
+                        alt="Корабль"
+                    />
+                    <a href="#" class="button"
+                        >продолжить и получить
+                        <span class="coins"
+                            >+<b class="amount">50</b
+                            ><i class="gold-coin"></i>монет</span
+                        ></a
+                    >
+                </div>
+            </div>
+
+            <div id="wrongAnswer" class="fancybox" style="display: none">
+                <div class="wrongAnswer fancy-custom">
+                    <h1>
+                        Попытайте удачу<br />
+                        в следующий раз
+                    </h1>
+                    <h2>
+                        К сожалению, Ваш ответ не отличался точностью.
+                        Продолжайте отвечать на вопросы, так как количество
+                        монет, выдаваемых за правильные ответы, будет все время
+                        расти.
+                    </h2>
+                    <div class="result-card">
+                        <p class="result-card_date">
+                            <span class="result-card_number">15</span> мая:
+                        </p>
+                        <h2>Что ищут Джек Воробей и Черная борода?</h2>
+                        <p class="result-card_youAnswer">
+                            <span>Ваш ответ:</span> Ни на чем, сам приплыл
+                        </p>
+                        <p class="result-card_correctAnswer">
+                            <span>Правильный ответ:</span> Источник вечной
+                            молодости
+                        </p>
+                    </div>
+                    <a href="#" class="button">Продолжить</a>
+                </div>
+            </div>
+
+            <div id="correctAnswer" class="fancybox" style="display: none">
+                <div class="correctAnswer fancy-custom">
+                    <h1>Поздравляем!</h1>
+                    <h2>
+                        Вы проявили удивительную эрудированность, точно ответив
+                        на предыдущий вопрос
+                    </h2>
+                    <div class="result-card">
+                        <p class="result-card_date">
+                            <span class="result-card_number">15</span> мая:
+                        </p>
+                        <h2>Что ищут Джек Воробей и Черная борода?</h2>
+                        <p class="result-card_correctAnswer">
+                            Источник вечной молодости
+                        </p>
+                    </div>
+                    <div class="reward">
+                        <span class="reward_amount"
+                            >Вы получаете
+                            <span class="coins"
+                                >+<b class="amount">150</b
+                                ><i class="gold-coin __big"></i>монет</span
+                            >
+                        </span>
+                    </div>
+                    <a href="#" class="button">Продолжить</a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#top" class="go-to-top">↖</a>
+
+        <script
+            type="text/javascript"
+            src="assets/js/vendor/jquery.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="assets/js/vendor/jquery.fancybox.pack.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="assets/js/vendor/ion.sound.min.js"
+        ></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+    </body>
+</html>

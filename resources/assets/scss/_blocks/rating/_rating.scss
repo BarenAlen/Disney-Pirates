@@ -1,0 +1,120 @@
+.rating {
+    background-image: url("../img/rating-bg-mob.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 38px 10px 48px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+
+    &__wrap {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    &__table {  
+        width: 100%;
+        box-sizing: border-box;
+        background: url(../img/rating-table.png) no-repeat 0 0 transparent;
+        border-collapse: collapse;
+
+        th {
+            height: 50px;
+            color: #f5e13f;
+            text-align: left;
+            padding-left: 10px;
+
+            &:last-child {
+                background: url(assets/img/rating-table-right.png) no-repeat right 1px transparent;
+            }
+        }
+
+        td {
+            height: 28px;
+            vertical-align: middle; 
+            color: #67390d;
+            font-weight: bold;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            padding-left: 15px;
+        }
+
+        th, td {
+            white-space: nowrap;
+            font-size: 14px;
+        }
+
+        tr:not(:nth-child(2)) {
+            border-top: 1px solid #caa891;
+        }
+
+        tr:first-child {
+            border-top: 0;
+        }
+
+        .my-result {
+            border-top: 0 !important;
+            td {
+                position:relative;
+                height: 30px;
+                background-color: #003e7e;
+                color: #f5e13f;
+                border:0 none;
+
+                &:first-child {
+                    border-top-left-radius: 5px; 
+                    border-bottom-left-radius: 5px; 
+                }
+
+                &:last-child {
+                    border-top-right-radius: 5px; 
+                    border-bottom-right-radius: 5px; 
+                }
+            }
+        }
+
+        tr:last-child {
+            td {
+                border-bottom: 1px solid #c2956a;
+            }
+
+        }
+    }
+
+    @media only screen and (min-width: 960px) {
+        background-image: url("../img/rating-bg.png");
+        min-height: 668px;
+        &__table { 
+            th, td {
+                white-space: nowrap;
+                font-size: 16px;
+            }
+
+            th {
+                padding-left: 20px;
+            }
+
+            td {
+                padding-left: 28px;
+            }
+        }
+    }
+}
+
+
+.rating-icon-mobile{
+    display: none;
+}
+.rating-icon{
+    display: block;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .rating-icon-mobile{
+        display: block;
+    }
+    .rating-icon{
+        display: none;
+    }
+}

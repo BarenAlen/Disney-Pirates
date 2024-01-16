@@ -1,0 +1,58 @@
+.chest-stats {
+	max-width: 300px;
+	margin: 0 auto;
+	background-image: url("../img/cabinet/chest.png");
+	background-repeat: no-repeat;
+	background-position: 8px center;
+	padding: 12px 0;
+	padding-left: 72px;
+	text-transform: uppercase;
+
+	&__title {
+		font-size: 17px;
+		font-weight: bold;
+	}
+
+	&__score {
+		white-space: nowrap;
+		font-size: 10px;
+		font-weight: bold;
+
+		& > * {
+			display: inline-block;
+
+			&:not(:last-child) {
+				margin-right: 6px;
+			}
+		}
+
+		.icon-coin,
+		.icon-star {
+			font-size: 15px;
+		}
+	}
+
+	@media only screen and (min-width: 960px) {
+
+		background-position: center 52px;
+		background-size: 66px;
+		padding: 20px 8px 5px;
+		padding-top: 20px;
+
+		&__title {
+			font-size: 13px;
+			margin-bottom: 84px;
+			text-align: center;
+		}
+
+		&__score {
+			font-size: 13px;
+			white-space: normal;
+
+			& > * {
+				margin: 0;
+				margin-bottom: 4px;
+			}
+		}
+	}
+}

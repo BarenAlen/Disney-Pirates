@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <title>Кабинет | Сундук</title>
+
+        <link rel="manifest" href="/manifest.json" />
+
+        <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon" />
+        <link
+            rel="shortcut icon"
+            href="../assets/img/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="../assets/css/common.css" />
+    </head>
+    <body>
+        <div class="page page-inner">
+            <header class="page-header page-header-inner">
+                <div class="page-header__content">
+                    <div class="page-header__logo">
+                        <a href="index.html">
+                            <img
+                                src="../assets/img/logo.png"
+                                alt="Главная страница"
+                            />
+                        </a>
+                    </div>
+
+                    <div class="page-header__sound">
+                        <button
+                            id="sound-toggler"
+                            class="sound-toggler"
+                        ></button>
+                    </div>
+
+                    <div class="page-header__auth">
+                        <div>
+                            <a class="page-header__auth__user" href="/register"
+                                >Александра И. <i class="icon-gear"></i
+                            ></a>
+                            <div>
+                                <div class="icon-coin page-header__auth__score">
+                                    425120
+                                </div>
+                                <div class="icon-star page-header__auth__score">
+                                    8120
+                                </div>
+                            </div>
+                        </div>
+                        <a class="page-header__auth__logout" href="logout"
+                            >Выйти</a
+                        >
+                    </div>
+
+                    <div class="page-header__menu">
+                        <!-- <div class="page-header__menu-item page-header__menu-item__login">
+                    <a class="fancybox-login" href="#login">Войти</a>
+                </div> -->
+                        <div class="page-header__menu-item">
+                            <a
+                                href="#nav"
+                                id="nav-toggle"
+                                class="nav-toggle"
+                                title="Главное меню"
+                            >
+                                <span class="nav-toggle__txt">Меню</span>
+                                <div class="menu-icon">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="cabinet">
+                <div class="container">
+                    <div class="cabinet__content">
+                        <aside class="cabinet__aside">
+                            <div class="chest-stats">
+                                <div class="chest-stats__title">
+                                    В вашем сундуке
+                                </div>
+                                <div class="chest-stats__score">
+                                    <div>
+                                        <i class="icon-coin"></i> 4343120 монет
+                                    </div>
+                                    <div>
+                                        <i class="icon-star"></i> 12943 место
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <main class="cabinet__main">
+                            <h1 class="page-title decorated">
+                                Приветствуем вас,<br class="show-lg" />
+                                Александра
+                            </h1>
+
+                            <ul class="cabinet-nav">
+                                <li>
+                                    <a
+                                        class="cabinet-nav__item quiz"
+                                        href="../quiz.html"
+                                        >Вопрос дня</a
+                                    >
+                                </li>
+                                <li class="current">
+                                    <a
+                                        class="cabinet-nav__item chest"
+                                        href="chest.html"
+                                        >Мой сундук</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="cabinet-nav__item settings"
+                                        href="settings.html"
+                                        >Настройки</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="cabinet-nav__item friends"
+                                        href="invite.html"
+                                        >Пригласить друзей</a
+                                    >
+                                </li>
+                            </ul>
+
+                            <div class="chest">
+                                <div class="chest__wrapper">
+                                    <table class="chest__table">
+                                        <tr>
+                                            <th>Дата, время</th>
+                                            <th>Действие</th>
+                                            <th>Монеты</th>
+                                        </tr>
+                                        <tr>
+                                            <td>10.05.2017 10:00</td>
+                                            <td>Регистрация</td>
+                                            <td>+100</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10.05.2017 10:00</td>
+                                            <td>Согласие на оповещение</td>
+                                            <td>+200</td>
+                                        </tr>
+                                        <!-- <tr>
+                                    <td>10.05.2017 10:00</td>
+                                    <td>Указание ссылки на соц. сети</td>
+                                    <td>+200</td>
+                                </tr>
+                                <tr>
+                                    <td>10.05.2017 10:00</td>
+                                    <td>Ответ на вопрос №1 от 10 мая</td>
+                                    <td>+100</td>
+                                </tr>
+                                <tr>
+                                    <td>10.05.2017 10:00</td>
+                                    <td>Ваш друг Сергей зарегистрировался по вашей ссылке</td>
+                                    <td>+50</td>
+                                </tr>
+                                <tr>
+                                    <td>10.05.2017 10:00</td>
+                                    <td>Ответ на вопрос №2 от 11 мая</td>
+                                    <td>+150</td>
+                                </tr>
+                                <tr>
+                                    <td>10.05.2017 10:00</td>
+                                    <td>Ответ на вопрос №3 от 12 ма</td>
+                                    <td>+190</td>
+                                </tr> -->
+                                    </table>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="page-footer">
+                <div class="container">
+                    <div
+                        class="page-footer__content page-footer__content--center"
+                    >
+                        <div class="page-footer__item">
+                            &copy; ПАО «Аэрофлот» 2017
+                        </div>
+                        <a class="page-footer__item" href="#">Правила акции</a>
+                    </div>
+                </div>
+            </footer>
+
+            <div id="nav" class="nav-overlay">
+                <button class="js-nav-close nav__close">&times;</button>
+                <div class="nav js-nav">
+                    <nav class="nav__container">
+                        <ul class="nav__menu">
+                            <li>
+                                <a href="../about.html" class="nav__menu-item"
+                                    >Об акции</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#login"
+                                    class="fancybox-login nav__menu-item"
+                                    >Участвовать</a
+                                >
+                            </li>
+                            <li>
+                                <a href="../prizes.html" class="nav__menu-item"
+                                    >Призы</a
+                                >
+                            </li>
+                            <li>
+                                <a href="../rating.html" class="nav__menu-item"
+                                    >Рейтинг</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="../registration.html"
+                                    class="nav__menu-item"
+                                    >Регистрация</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#feedback"
+                                    class="fancybox-feedback nav__menu-item"
+                                    >Обратная связь</a
+                                >
+                            </li>
+                        </ul>
+                        <div class="nav__sharing">
+                            <div class="nav__sharing-title">
+                                Рассказать друзьям
+                            </div>
+                            <ul class="social-list">
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="twitter goodshare"
+                                        data-type="tw"
+                                        data-title=""
+                                        target="_blank"
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="vk goodshare"
+                                        data-type="vk"
+                                        data-title=""
+                                        target="_blank"
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="facebook goodshare"
+                                        data-type="fb"
+                                        data-title=""
+                                        target="_blank"
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div id="login" class="fancybox" style="display: none">
+                <div class="login fancy-custom">
+                    <h1>Войти на сайт</h1>
+                    <form
+                        id="form-signup"
+                        action="/login"
+                        method="post"
+                        role="form"
+                    >
+                        <div
+                            class="form-group field-loginform-username required"
+                        >
+                            <div class="input-placeholder">
+                                <input
+                                    type="text"
+                                    id="loginform-username"
+                                    class="form-control text"
+                                    name="LoginForm[username]"
+                                />
+                                <label for="loginform-username"
+                                    >Логин, он же ваш электронный адрес</label
+                                >
+                            </div>
+                            <p class="help-block help-block-error"></p>
+                        </div>
+                        <div
+                            class="form-group field-loginform-password required"
+                        >
+                            <div class="input-placeholder">
+                                <input
+                                    type="password"
+                                    id="loginform-password"
+                                    class="form-control text"
+                                    name="LoginForm[password]"
+                                    placeholder=""
+                                />
+                                <label for="loginform-password">Пароль</label>
+                            </div>
+                            <p class="help-block help-block-error"></p>
+                        </div>
+                        <button
+                            type="submit"
+                            class="button form-control"
+                            name="login-button"
+                        >
+                            Войти
+                        </button>
+                        <div class="login__text">
+                            и начать приключения!<br />или
+                        </div>
+                        <a href="#" class="button button-white form-control"
+                            >Зарегистрироваться в акции</a
+                        >
+                        <p>
+                            Не можете войти на сайт?
+                            <a href="/request-password-reset" class="forgot"
+                                >Сбросить пароль</a
+                            >
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+            <div id="feedback" class="fancybox" style="display: none">
+                <div class="feedback fancy-custom">
+                    <h1>Обратная связь</h1>
+                    <form
+                        id="form-feedback"
+                        action="/login"
+                        method="post"
+                        role="form"
+                    >
+                        <div
+                            class="form-group field-feedback-username required"
+                        >
+                            <div class="input-placeholder">
+                                <input
+                                    type="text"
+                                    id="feedback-username"
+                                    class="form-control text"
+                                    name="LoginForm[username]"
+                                />
+                                <label for="feedback-username"
+                                    >Имя<span class="required-mark"
+                                        >*</span
+                                    ></label
+                                >
+                            </div>
+                            <p class="help-block help-block-error"></p>
+                        </div>
+                        <div
+                            class="form-group field-feedback-username required"
+                        >
+                            <div class="input-placeholder">
+                                <input
+                                    type="text"
+                                    id="feedback-username"
+                                    class="form-control text"
+                                    name="LoginForm[username]"
+                                />
+                                <label for="feedback-username"
+                                    >Номер карты Аэрофлот Бонус<span
+                                        class="required-mark"
+                                        >*</span
+                                    ></label
+                                >
+                            </div>
+                            <p class="help-block help-block-error"></p>
+                        </div>
+                        <div
+                            class="form-group field-feedback-username required"
+                        >
+                            <div class="input-placeholder">
+                                <input
+                                    type="text"
+                                    id="feedback-username"
+                                    class="form-control text"
+                                    name="LoginForm[username]"
+                                />
+                                <label for="feedback-username"
+                                    >Электронный адрес для связи<span
+                                        class="required-mark"
+                                        >*</span
+                                    ></label
+                                >
+                            </div>
+                            <p class="help-block help-block-error"></p>
+                        </div>
+                        <div class="form-group field-feedback-username">
+                            <div class="input-placeholder">
+                                <textarea
+                                    id="feedback-textarea"
+                                    class="form-control"
+                                    rows="3"
+                                ></textarea>
+                                <label for="feedback-textarea"
+                                    >Ваше сообщение<span class="required-mark"
+                                        >*</span
+                                    ></label
+                                >
+                            </div>
+                        </div>
+                        <div style="text-align: left">
+                            <span class="required-mark">*</span>
+                            <i>Поля, обязательные для заполнения</i>
+                        </div>
+                        <button
+                            type="submit"
+                            class="button form-control"
+                            name="feedback-button"
+                        >
+                            Отправить
+                        </button>
+                        <p>Мы ответим вам в течении суток</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <a href="#top" class="go-to-top">↖</a>
+
+        <script
+            type="text/javascript"
+            src="../assets/js/vendor/jquery.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="../assets/js/vendor/jquery.fancybox.pack.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="../assets/js/vendor/ion.sound.min.js"
+        ></script>
+        <script type="text/javascript" src="../assets/js/main.js"></script>
+    </body>
+</html>
